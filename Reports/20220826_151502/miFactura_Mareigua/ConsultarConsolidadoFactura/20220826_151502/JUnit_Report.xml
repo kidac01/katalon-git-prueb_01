@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ConsultarConsolidadoFactura" time="44.584" tests="15" failures="3" errors="0">
+   <testsuite name="ConsultarConsolidadoFactura" tests="15" failures="3" errors="0" time="44.584" skipped="0" timestamp="2022-08-26 15:15:15" hostname="cenet - DESKTOP-4DPQOK0" id="Test Suites/miFactura_Mareigua/ConsultarConsolidadoFactura">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Cenet\\Cenet-Factura\\Mareigua\\miFactura_ws_Mareigua-25-08-2022\\Reports\\20220826_151502\\miFactura_Mareigua\\ConsultarConsolidadoFactura\\20220826_151502"/>
+         <property name="logFiles" value="C:\\Cenet\\Cenet-Factura\\Mareigua\\miFactura_ws_Mareigua-25-08-2022\\Reports\\20220826_151502\\miFactura_Mareigua\\ConsultarConsolidadoFactura\\20220826_151502\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cenet - DESKTOP-4DPQOK0"/>
+         <property name="hostAddress" value="192.168.1.127"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.3.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Login_param" time="12.756" classname="Test Cases/Login_param" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)
+"/>
+         <system-out><![CDATA[2022-08-26 15:15:16 - [TEST_CASE][FAILED] - Test Cases/Login_param: Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)
+
+
+2022-08-26 15:15:18 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:19 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:25 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\0.har
+
+2022-08-26 15:15:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:26 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTU0NDkyNCwiZXhwIjoxNjYxNjMxMzI0LCJpYXQiOjE2NjE1NDQ5MjQsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.6WvWnb_DbdT1FDaVnlompM4UbZ8bZ_7aOe-BufCKYMo"}}
+
+2022-08-26 15:15:26 - [MESSAGE][WARNING] - JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTU0NDkyNCwiZXhwIjoxNjYxNjMxMzI0LCJpYXQiOjE2NjE1NDQ5MjQsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.6WvWnb_DbdT1FDaVnlompM4UbZ8bZ_7aOe-BufCKYMo"}}
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:26 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:26 - [TEST_STEP][FAILED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:27 - [MESSAGE][FAILED] - Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:27 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:27 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:29 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[2022-08-26 15:15:16 - [TEST_CASE][FAILED] - Test Cases/Login_param: Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.831" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:29 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:29 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:29 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:30 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\1.har
+
+2022-08-26 15:15:30 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:31 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:31 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:31 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:31 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:31 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:31 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="2.037" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:32 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:32 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:32 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:33 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\2.har
+
+2022-08-26 15:15:33 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:33 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:33 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:33 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:33 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:33 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:34 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.733" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:34 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:34 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:34 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:34 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\3.har
+
+2022-08-26 15:15:34 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:35 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:35 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:35 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:35 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:35 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:36 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.987" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:36 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:36 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:36 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:37 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\4.har
+
+2022-08-26 15:15:37 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:37 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:37 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:37 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:37 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:37 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:38 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="2.018" classname="Test Cases/Login_param" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)
+"/>
+         <system-out><![CDATA[2022-08-26 15:15:38 - [TEST_CASE][FAILED] - Test Cases/Login_param: Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)
+
+
+2022-08-26 15:15:38 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:38 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:39 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\5.har
+
+2022-08-26 15:15:39 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:39 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:39 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTU0NDkzOSwiZXhwIjoxNjYxNjMxMzM5LCJpYXQiOjE2NjE1NDQ5MzksImlzcyI6Ik1pc0ZhY3R1cmFzIn0.rLnX1JXiIfPdAXaN-hd85sXsJNBVJD8euqhCfdITkQM"}}
+
+2022-08-26 15:15:39 - [MESSAGE][WARNING] - JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTU0NDkzOSwiZXhwIjoxNjYxNjMxMzM5LCJpYXQiOjE2NjE1NDQ5MzksImlzcyI6Ik1pc0ZhY3R1cmFzIn0.rLnX1JXiIfPdAXaN-hd85sXsJNBVJD8euqhCfdITkQM"}}
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:39 - [TEST_STEP][FAILED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:39 - [MESSAGE][FAILED] - Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:39 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:39 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:40 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[2022-08-26 15:15:38 - [TEST_CASE][FAILED] - Test Cases/Login_param: Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.97" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:41 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:41 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:41 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:42 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\6.har
+
+2022-08-26 15:15:42 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:43 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:43 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:43 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:43 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:43 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="2.024" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:43 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:43 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:44 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\7.har
+
+2022-08-26 15:15:44 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:44 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:45 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:45 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:45 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:45 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:45 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:45 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="2.216" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:46 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:46 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:46 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:47 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\8.har
+
+2022-08-26 15:15:47 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:48 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:48 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:48 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:48 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:48 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:48 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.538" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:48 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:49 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:49 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:49 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\9.har
+
+2022-08-26 15:15:49 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:50 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:50 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:50 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:50 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:50 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.905" classname="Test Cases/Login_param" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)
+"/>
+         <system-out><![CDATA[2022-08-26 15:15:50 - [TEST_CASE][FAILED] - Test Cases/Login_param: Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)
+
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:50 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:51 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\10.har
+
+2022-08-26 15:15:51 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:52 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:52 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTU0NDk1MSwiZXhwIjoxNjYxNjMxMzUxLCJpYXQiOjE2NjE1NDQ5NTEsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.QRidHF9J1zCM1zhzPWnp12DU_whmGarLCjHDV7VCs7A"}}
+
+2022-08-26 15:15:52 - [MESSAGE][WARNING] - JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTU0NDk1MSwiZXhwIjoxNjYxNjMxMzUxLCJpYXQiOjE2NjE1NDQ5NTEsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.QRidHF9J1zCM1zhzPWnp12DU_whmGarLCjHDV7VCs7A"}}
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:52 - [TEST_STEP][FAILED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:52 - [MESSAGE][FAILED] - Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:52 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:52 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[2022-08-26 15:15:50 - [TEST_CASE][FAILED] - Test Cases/Login_param: Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.835" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:52 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:52 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:53 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\11.har
+
+2022-08-26 15:15:53 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:53 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:53 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:53 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:53 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:53 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:54 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.297" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:54 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:54 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:54 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:55 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\12.har
+
+2022-08-26 15:15:55 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:55 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:55 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:55 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:55 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:55 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:55 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="2.088" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:56 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:56 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:56 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:57 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\13.har
+
+2022-08-26 15:15:57 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:57 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:58 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:58 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:58 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:58 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:58 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.493" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-26 15:15:58 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 15:15:58 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 15:15:59 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_151502\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_151502\requests\main\14.har
+
+2022-08-26 15:15:59 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 15:15:59 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 15:15:59 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - status_login = response.getStatusCode(): null
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:59 - [MESSAGE][WARNING] - JSON {"Type":"ERROR","ValidationMessage":"Tu usuario o contraseña son incorrectos.","Content":null}
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - nom_func = "val_login": null
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage): Exito
+
+2022-08-26 15:15:59 - [MESSAGE][PASSED] - Exito
+
+2022-08-26 15:15:59 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED
+
+2022-08-26 15:15:59 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-08-26 15:15:15 - [TEST_SUITE][FAILED] - ConsultarConsolidadoFactura: Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-08-26 15:15:15 - [TEST_SUITE][FAILED] - ConsultarConsolidadoFactura: Test Cases/Login_param FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Fallido -->  Valor (Type ó ValidationMessage) NO corresponde
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(Val_mensaje_serv.groovy:64)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login_param.run(Login_param:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661544902130.run(TempTestSuite1661544902130.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,230 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarNomina,,,,2022-08-18 17:42:57,2022-08-18 17:43:48,"51,656s",FAILED
+,,,,,,,
+Test Cases/Elimina_archivo,,,,2022-08-18 17:42:57,2022-08-18 17:43:01,"3,443s",PASSED
+elimina = new almacena_datos_servicio.Elimina_archivo(),,,,2022-08-18 17:42:59,2022-08-18 17:42:59,"0,025s",PASSED
+elimina.deleteFile(ruta_arch_salida),,,,2022-08-18 17:42:59,2022-08-18 17:43:01,"2,122s",PASSED
+,,,,,,,
+Test Cases/Login,,,,2022-08-18 17:43:01,2022-08-18 17:43:10,"9,299s",PASSED
+"respu = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-18 17:43:03,2022-08-18 17:43:10,"6,743s",PASSED
+response = getInstance().getCurrentResponse(),,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,004s",PASSED
+request = getInstance().getCurrentRequest(),,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,032s",PASSED
+"def_status_200 = verifyResponseStatusCodeInRange(response, 200, 500)",,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,089s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,039s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,042s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,078s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,109s",PASSED
+val = ValidationMessage,,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,055s",PASSED
+if (val == null),,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,058s",PASSED
+if (Content != null),,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,019s",PASSED
+"println(""token -->"" + token)",,,,2022-08-18 17:43:10,2022-08-18 17:43:10,"0,012s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:11,2022-08-18 17:43:16,"4,930s",FAILED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:11,2022-08-18 17:43:11,"0,033s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:11,2022-08-18 17:43:11,"0,011s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:11,2022-08-18 17:43:13,"1,445s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:13,2022-08-18 17:43:13,"0,006s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:13,2022-08-18 17:43:13,"0,005s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:13,2022-08-18 17:43:13,"0,017s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:13,2022-08-18 17:43:13,"0,014s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:13,2022-08-18 17:43:13,"0,004s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:13,2022-08-18 17:43:13,"0,125s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:13,2022-08-18 17:43:13,"0,005s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:13,2022-08-18 17:43:13,"0,177s",FAILED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:13,2022-08-18 17:43:16,"2,368s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:16,2022-08-18 17:43:19,"2,890s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:16,2022-08-18 17:43:16,"0,001s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:16,2022-08-18 17:43:16,"0,006s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:16,2022-08-18 17:43:18,"2,197s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:18,2022-08-18 17:43:18,"0,001s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:18,2022-08-18 17:43:18,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:18,2022-08-18 17:43:18,"0,001s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:18,2022-08-18 17:43:18,"0,002s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:18,2022-08-18 17:43:18,"0,001s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:18,2022-08-18 17:43:18,"0,064s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:18,2022-08-18 17:43:18,"0,050s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:18,2022-08-18 17:43:18,"0,012s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:18,2022-08-18 17:43:19,"0,426s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:19,2022-08-18 17:43:23,"3,391s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:19,2022-08-18 17:43:19,"0,001s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:19,2022-08-18 17:43:19,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:19,2022-08-18 17:43:22,"2,742s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:22,2022-08-18 17:43:22,"0,002s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:22,2022-08-18 17:43:22,"0,006s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:22,2022-08-18 17:43:22,"0,001s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:22,2022-08-18 17:43:22,"0,002s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:22,2022-08-18 17:43:22,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:22,2022-08-18 17:43:22,"0,004s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:22,2022-08-18 17:43:22,"0,008s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:22,2022-08-18 17:43:22,"0,005s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:22,2022-08-18 17:43:23,"0,534s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:23,2022-08-18 17:43:25,"2,555s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:23,2022-08-18 17:43:23,"0,002s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:23,2022-08-18 17:43:23,"0,001s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:23,2022-08-18 17:43:25,"2,077s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,002s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,002s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,004s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,001s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,002s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,010s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,003s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:25,2022-08-18 17:43:25,"0,342s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:26,2022-08-18 17:43:28,"2,116s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:26,2022-08-18 17:43:26,"0,001s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:26,2022-08-18 17:43:26,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:26,2022-08-18 17:43:27,"1,673s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:27,2022-08-18 17:43:27,"0,009s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:27,2022-08-18 17:43:27,"0,001s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:27,2022-08-18 17:43:27,"0,002s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:27,2022-08-18 17:43:27,"0,005s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:27,2022-08-18 17:43:27,"0,003s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:27,2022-08-18 17:43:27,"0,004s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:27,2022-08-18 17:43:27,"0,004s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:27,2022-08-18 17:43:27,"0,012s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:27,2022-08-18 17:43:28,"0,214s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:28,2022-08-18 17:43:31,"2,917s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:28,2022-08-18 17:43:28,"0,031s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:28,2022-08-18 17:43:28,"0,011s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:28,2022-08-18 17:43:30,"2,185s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:30,2022-08-18 17:43:30,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:30,2022-08-18 17:43:30,"0,005s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:30,2022-08-18 17:43:30,"0,001s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:30,2022-08-18 17:43:30,"0,001s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:30,2022-08-18 17:43:30,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:30,2022-08-18 17:43:30,"0,031s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:30,2022-08-18 17:43:30,"0,000s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:30,2022-08-18 17:43:30,"0,006s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:30,2022-08-18 17:43:31,"0,504s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:31,2022-08-18 17:43:33,"2,257s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:31,2022-08-18 17:43:31,"0,018s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:31,2022-08-18 17:43:31,"0,003s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:31,2022-08-18 17:43:33,"1,504s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,001s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,002s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,002s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,006s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,026s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,009s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,002s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:33,2022-08-18 17:43:33,"0,576s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:34,2022-08-18 17:43:36,"2,039s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:34,2022-08-18 17:43:34,"0,004s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:34,2022-08-18 17:43:34,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:34,2022-08-18 17:43:35,"1,161s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:35,2022-08-18 17:43:35,"0,006s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:35,2022-08-18 17:43:35,"0,012s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:35,2022-08-18 17:43:36,"0,018s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:36,2022-08-18 17:43:36,"0,001s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:36,2022-08-18 17:43:36,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:36,2022-08-18 17:43:36,"0,024s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:36,2022-08-18 17:43:36,"0,005s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:36,2022-08-18 17:43:36,"0,017s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:36,2022-08-18 17:43:36,"0,544s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:36,2022-08-18 17:43:38,"1,340s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:36,2022-08-18 17:43:36,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:36,2022-08-18 17:43:36,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:36,2022-08-18 17:43:37,"1,084s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:37,2022-08-18 17:43:37,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:37,2022-08-18 17:43:37,"0,002s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:37,2022-08-18 17:43:37,"0,001s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:37,2022-08-18 17:43:37,"0,001s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:37,2022-08-18 17:43:37,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:37,2022-08-18 17:43:37,"0,003s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:37,2022-08-18 17:43:37,"0,001s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:37,2022-08-18 17:43:37,"0,003s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:37,2022-08-18 17:43:38,"0,155s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:38,2022-08-18 17:43:40,"1,900s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:38,2022-08-18 17:43:38,"0,003s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:38,2022-08-18 17:43:38,"0,003s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:38,2022-08-18 17:43:39,"1,308s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:39,2022-08-18 17:43:39,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:39,2022-08-18 17:43:39,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:39,2022-08-18 17:43:39,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:39,2022-08-18 17:43:39,"0,003s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:39,2022-08-18 17:43:39,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:39,2022-08-18 17:43:39,"0,006s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:39,2022-08-18 17:43:39,"0,012s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:39,2022-08-18 17:43:39,"0,003s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:39,2022-08-18 17:43:40,"0,482s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:40,2022-08-18 17:43:42,"2,164s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:40,2022-08-18 17:43:40,"0,001s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:40,2022-08-18 17:43:40,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:40,2022-08-18 17:43:41,"1,411s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:41,2022-08-18 17:43:41,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:41,2022-08-18 17:43:41,"0,001s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:41,2022-08-18 17:43:41,"0,001s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:41,2022-08-18 17:43:41,"0,001s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:41,2022-08-18 17:43:41,"0,001s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:41,2022-08-18 17:43:41,"0,002s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:41,2022-08-18 17:43:41,"0,001s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:41,2022-08-18 17:43:41,"0,002s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:41,2022-08-18 17:43:42,"0,599s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:42,2022-08-18 17:43:44,"1,644s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:42,2022-08-18 17:43:42,"0,001s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:42,2022-08-18 17:43:42,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:42,2022-08-18 17:43:43,"1,058s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:43,2022-08-18 17:43:43,"0,001s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:43,2022-08-18 17:43:43,"0,001s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:43,2022-08-18 17:43:43,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:43,2022-08-18 17:43:43,"0,001s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:43,2022-08-18 17:43:43,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:43,2022-08-18 17:43:43,"0,004s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:43,2022-08-18 17:43:43,"0,001s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:43,2022-08-18 17:43:43,"0,001s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:43,2022-08-18 17:43:44,"0,283s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:44,2022-08-18 17:43:46,"2,244s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:44,2022-08-18 17:43:44,"0,003s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:44,2022-08-18 17:43:44,"0,001s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:44,2022-08-18 17:43:46,"1,766s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,001s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,001s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,005s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,002s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,012s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:46,2022-08-18 17:43:46,"0,352s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-18 17:43:46,2022-08-18 17:43:48,"1,833s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-18 17:43:47,2022-08-18 17:43:47,"0,001s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-18 17:43:47,2022-08-18 17:43:47,"0,001s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-18 17:43:47,2022-08-18 17:43:48,"1,284s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,001s",PASSED
+status = response.getStatusCode(),,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,001s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,001s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,002s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,001s",PASSED
+"almacena_datos_servicio.consulta_nomina.valida_mensaje_serv_report(parsedJson, val_mensaje_report)",,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,002s",PASSED
+almacena_datos_servicio.consulta_nomina.guarda_salida_consultar_nomina(),,,,2022-08-18 17:43:48,2022-08-18 17:43:48,"0,186s",PASSED

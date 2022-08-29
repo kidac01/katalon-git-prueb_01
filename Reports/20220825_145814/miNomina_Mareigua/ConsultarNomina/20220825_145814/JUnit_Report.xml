@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ConsultarNomina" time="16.346" tests="2" failures="0" errors="0">
+   <testsuite name="ConsultarNomina" tests="2" failures="0" errors="0" time="16.346" skipped="0" timestamp="2022-08-25 14:58:32" hostname="cenet - DESKTOP-4DPQOK0" id="Test Suites/miNomina_Mareigua/ConsultarNomina">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Cenet\\Cenet-Factura\\Mareigua\\miFactura_ws_Mareigua-25-08-2022\\Reports\\20220825_145814\\miNomina_Mareigua\\ConsultarNomina\\20220825_145814"/>
+         <property name="logFiles" value="C:\\Cenet\\Cenet-Factura\\Mareigua\\miFactura_ws_Mareigua-25-08-2022\\Reports\\20220825_145814\\miNomina_Mareigua\\ConsultarNomina\\20220825_145814\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cenet - DESKTOP-4DPQOK0"/>
+         <property name="hostAddress" value="192.168.1.127"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.3.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Login_param" time="12.41" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-25 14:58:33 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-25 14:58:34 - [TEST_STEP][PASSED] - respu = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-25 14:58:43 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220825_145814\miNomina_Mareigua\ConsultarNomina\20220825_145814\requests\main\0.har
+
+2022-08-25 14:58:44 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-25 14:58:44 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-25 14:58:44 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-25 14:58:45 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-25 14:58:45 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - def_status_200 = verifyResponseStatusCodeInRange(response, 200, 500): Verify response status code successfully
+
+2022-08-25 14:58:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTQ1NzUyMSwiZXhwIjoxNjYxNTQzOTIxLCJpYXQiOjE2NjE0NTc1MjEsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.izrlLqgB_wyKVIRX-288x4obBJS42Wgnm9xAX4TclKo"}}
+
+2022-08-25 14:58:45 - [MESSAGE][WARNING] - JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTQ1NzUyMSwiZXhwIjoxNjYxNTQzOTIxLCJpYXQiOjE2NjE0NTc1MjEsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.izrlLqgB_wyKVIRX-288x4obBJS42Wgnm9xAX4TclKo"}}
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - val = ValidationMessage: null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - if (val == null): null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - val = "null": null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - if (Content != null): null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - token = "misfacturas " + JWT: null
+
+2022-08-25 14:58:45 - [TEST_STEP][PASSED] - println("token -->" + token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_param" time="1.311" classname="Test Cases/Login_param" status="PASSED">
+         <system-out><![CDATA[2022-08-25 14:58:47 - [TEST_CASE][PASSED] - Test Cases/Login_param: Test Cases/Login_param
+
+2022-08-25 14:58:47 - [TEST_STEP][PASSED] - respu = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-25 14:58:48 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220825_145814\miNomina_Mareigua\ConsultarNomina\20220825_145814\requests\main\1.har
+
+2022-08-25 14:58:48 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-25 14:58:48 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-25 14:58:48 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - def_status_200 = verifyResponseStatusCodeInRange(response, 200, 500): Verify response status code successfully
+
+2022-08-25 14:58:48 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTQ1NzUyNywiZXhwIjoxNjYxNTQzOTI3LCJpYXQiOjE2NjE0NTc1MjcsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.b3EzdBZHdu2KGwwbonxwvBjDUUNBU93xyBoDAP9RzXo"}}
+
+2022-08-25 14:58:48 - [MESSAGE][WARNING] - JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTQ1NzUyNywiZXhwIjoxNjYxNTQzOTI3LCJpYXQiOjE2NjE0NTc1MjcsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.b3EzdBZHdu2KGwwbonxwvBjDUUNBU93xyBoDAP9RzXo"}}
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - val = ValidationMessage: null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - if (val == null): null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - val = "null": null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - if (Content != null): null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - token = "misfacturas " + JWT: null
+
+2022-08-25 14:58:48 - [TEST_STEP][PASSED] - println("token -->" + token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-08-25 14:58:32 - [TEST_SUITE][PASSED] - ConsultarNomina: Test Cases/Login_param]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

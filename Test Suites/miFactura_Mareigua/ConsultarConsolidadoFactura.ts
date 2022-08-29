@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>ConsultarConsolidadoFactura</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>9bf2eef8-6495-473a-9e87-a5b2cb9f0433</testSuiteGuid>
+   <testCaseLink>
+      <guid>712aea9e-3852-4300-b714-a8f697a7666c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login_param</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0553d827-7d8a-4dc2-b589-4f84681fadad</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/miNomina_Mareigua/Serv_Mareigua_miFactura_login</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>0553d827-7d8a-4dc2-b589-4f84681fadad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Login</value>
+         <variableId>8fdae7c3-1045-46c2-a23a-8fdb6e0e429b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0553d827-7d8a-4dc2-b589-4f84681fadad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>04c5a1be-51f1-4f36-8fac-301610910379</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0553d827-7d8a-4dc2-b589-4f84681fadad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>type</value>
+         <variableId>70f0c408-4972-4883-a191-d16f1d056050</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0553d827-7d8a-4dc2-b589-4f84681fadad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ValidationMessage</value>
+         <variableId>7a2ef010-09c2-4db4-8218-6e5cfb658453</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0553d827-7d8a-4dc2-b589-4f84681fadad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>registro</value>
+         <variableId>b3215920-bd8d-4122-a4c8-54cb33b4a297</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

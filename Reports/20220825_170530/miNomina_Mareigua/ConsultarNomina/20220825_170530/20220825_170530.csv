@@ -1,0 +1,41 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarNomina,,,,2022-08-25 17:05:45,2022-08-25 17:06:12,"27,083s",ERROR
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-25 17:05:47,2022-08-25 17:06:06,"18,378s",ERROR
+regis = Integer.parseInt(registro),,,,2022-08-25 17:05:51,2022-08-25 17:05:53,"2,746s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-25 17:05:53,2022-08-25 17:06:02,"9,008s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-25 17:06:02,2022-08-25 17:06:02,"0,071s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-25 17:06:02,2022-08-25 17:06:02,"0,033s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 17:06:02,2022-08-25 17:06:02,"0,038s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 17:06:02,2022-08-25 17:06:03,"0,067s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-25 17:06:03,2022-08-25 17:06:03,"0,149s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 17:06:03,2022-08-25 17:06:03,"0,085s",PASSED
+"nom_func = ""val_login""",,,,2022-08-25 17:06:03,2022-08-25 17:06:03,"0,035s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-25 17:06:03,2022-08-25 17:06:03,"0,169s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-25 17:06:03,2022-08-25 17:06:06,"2,532s",ERROR
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-25 17:06:06,2022-08-25 17:06:10,"3,302s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-25 17:06:06,2022-08-25 17:06:06,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-25 17:06:06,2022-08-25 17:06:08,"1,961s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-25 17:06:08,2022-08-25 17:06:08,"0,015s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-25 17:06:08,2022-08-25 17:06:08,"0,006s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 17:06:08,2022-08-25 17:06:08,"0,005s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 17:06:08,2022-08-25 17:06:08,"0,005s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-25 17:06:08,2022-08-25 17:06:08,"0,021s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 17:06:08,2022-08-25 17:06:08,"0,003s",PASSED
+"nom_func = ""val_login""",,,,2022-08-25 17:06:08,2022-08-25 17:06:08,"0,002s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-25 17:06:08,2022-08-25 17:06:08,"0,010s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-25 17:06:08,2022-08-25 17:06:10,"1,092s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-25 17:06:10,2022-08-25 17:06:12,"2,371s",FAILED
+regis = Integer.parseInt(registro),,,,2022-08-25 17:06:10,2022-08-25 17:06:10,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-25 17:06:10,2022-08-25 17:06:12,"1,903s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,015s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,006s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,005s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,002s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,003s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,004s",PASSED
+"nom_func = ""val_login""",,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,003s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,035s",FAILED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-25 17:06:12,2022-08-25 17:06:12,"0,247s",PASSED

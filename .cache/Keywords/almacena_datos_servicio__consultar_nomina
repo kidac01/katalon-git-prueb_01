@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "6A96B37FFAF21857B9051B741F1AFCF1",
+  "keywordClasses": [
+    {
+      "name": "almacena_datos_servicio.consultar_nomina",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

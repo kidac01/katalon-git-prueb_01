@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarNomina,,,,2022-08-25 16:06:13,2022-08-25 16:06:29,"16,057s",FAILED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-25 16:06:14,2022-08-25 16:06:27,"12,450s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-25 16:06:16,2022-08-25 16:06:17,"1,411s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-25 16:06:17,2022-08-25 16:06:24,"6,755s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-25 16:06:24,2022-08-25 16:06:24,"0,058s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-25 16:06:24,2022-08-25 16:06:24,"0,004s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 16:06:24,2022-08-25 16:06:24,"0,026s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 16:06:24,2022-08-25 16:06:24,"0,050s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-25 16:06:24,2022-08-25 16:06:24,"0,037s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 16:06:24,2022-08-25 16:06:24,"0,037s",PASSED
+"nom_func = ""val_login""",,,,2022-08-25 16:06:24,2022-08-25 16:06:24,"0,008s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-25 16:06:24,2022-08-25 16:06:24,"0,095s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-25 16:06:24,2022-08-25 16:06:27,"2,626s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-25 16:06:27,2022-08-25 16:06:29,"1,820s",FAILED
+regis = Integer.parseInt(registro),,,,2022-08-25 16:06:27,2022-08-25 16:06:27,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-25 16:06:27,2022-08-25 16:06:29,"1,395s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,002s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,001s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,001s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,004s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,010s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,005s",PASSED
+"nom_func = ""val_login""",,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,001s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,039s",FAILED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-25 16:06:29,2022-08-25 16:06:29,"0,245s",PASSED

@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarNomina,,,,2022-08-25 14:58:32,2022-08-25 14:58:48,"16,346s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-25 14:58:33,2022-08-25 14:58:45,"12,410s",PASSED
+"respu = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-25 14:58:34,2022-08-25 14:58:45,"10,429s",PASSED
+response = getInstance().getCurrentResponse(),,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,040s",PASSED
+request = getInstance().getCurrentRequest(),,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,015s",PASSED
+"def_status_200 = verifyResponseStatusCodeInRange(response, 200, 500)",,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,096s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,056s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,059s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,105s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,043s",PASSED
+val = ValidationMessage,,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,039s",PASSED
+if (val == null),,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,025s",PASSED
+if (Content != null),,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,010s",PASSED
+"println(""token -->"" + token)",,,,2022-08-25 14:58:45,2022-08-25 14:58:45,"0,022s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-25 14:58:47,2022-08-25 14:58:48,"1,311s",PASSED
+"respu = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-25 14:58:47,2022-08-25 14:58:48,"1,033s",PASSED
+response = getInstance().getCurrentResponse(),,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,005s",PASSED
+request = getInstance().getCurrentRequest(),,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,000s",PASSED
+"def_status_200 = verifyResponseStatusCodeInRange(response, 200, 500)",,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,012s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,001s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,004s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,004s",PASSED
+val = ValidationMessage,,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,006s",PASSED
+if (val == null),,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,003s",PASSED
+if (Content != null),,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,012s",PASSED
+"println(""token -->"" + token)",,,,2022-08-25 14:58:48,2022-08-25 14:58:48,"0,003s",PASSED

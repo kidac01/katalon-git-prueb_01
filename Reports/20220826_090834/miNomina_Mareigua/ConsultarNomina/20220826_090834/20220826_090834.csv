@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarNomina,,,,2022-08-26 09:08:48,2022-08-26 09:09:01,"13,199s",FAILED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-26 09:08:50,2022-08-26 09:08:58,"7,964s",FAILED
+regis = Integer.parseInt(registro),,,,2022-08-26 09:08:52,2022-08-26 09:08:54,"2,553s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-26 09:08:54,2022-08-26 09:08:58,"3,497s",FAILED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-26 09:08:58,2022-08-26 09:08:59,"1,049s",FAILED
+regis = Integer.parseInt(registro),,,,2022-08-26 09:08:58,2022-08-26 09:08:58,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-26 09:08:58,2022-08-26 09:08:59,"0,842s",FAILED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-26 09:09:00,2022-08-26 09:09:01,"0,741s",FAILED
+regis = Integer.parseInt(registro),,,,2022-08-26 09:09:00,2022-08-26 09:09:00,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-26 09:09:00,2022-08-26 09:09:01,"0,495s",FAILED

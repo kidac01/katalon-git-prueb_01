@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "2470161EADED0CBC1F94C7BB71DA94EB",
+  "keywordClasses": [
+    {
+      "name": "almacena_datos_servicio.Graba_archivo",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

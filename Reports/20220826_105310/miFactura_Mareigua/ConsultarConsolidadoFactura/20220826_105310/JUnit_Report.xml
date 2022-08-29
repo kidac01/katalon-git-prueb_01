@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ConsultarConsolidadoFactura" time="13.0" tests="2" failures="0" errors="0">
+   <testsuite name="ConsultarConsolidadoFactura" tests="2" failures="0" errors="0" time="13.0" skipped="0" timestamp="2022-08-26 10:53:24" hostname="cenet - DESKTOP-4DPQOK0" id="Test Suites/miFactura_Mareigua/ConsultarConsolidadoFactura">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Cenet\\Cenet-Factura\\Mareigua\\miFactura_ws_Mareigua-25-08-2022\\Reports\\20220826_105310\\miFactura_Mareigua\\ConsultarConsolidadoFactura\\20220826_105310"/>
+         <property name="logFiles" value="C:\\Cenet\\Cenet-Factura\\Mareigua\\miFactura_ws_Mareigua-25-08-2022\\Reports\\20220826_105310\\miFactura_Mareigua\\ConsultarConsolidadoFactura\\20220826_105310\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cenet - DESKTOP-4DPQOK0"/>
+         <property name="hostAddress" value="192.168.1.127"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.3.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Login" time="9.595" classname="Test Cases/Login" status="PASSED">
+         <system-out><![CDATA[2022-08-26 10:53:25 - [TEST_CASE][PASSED] - Test Cases/Login: Test Cases/Login
+
+2022-08-26 10:53:28 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-26 10:53:33 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_105310\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_105310\requests\main\0.har
+
+2022-08-26 10:53:34 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 10:53:34 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 10:53:34 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 10:53:34 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 10:53:34 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 10:53:34 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 10:53:34 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 10:53:34 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTUyOTIxMiwiZXhwIjoxNjYxNjE1NjEyLCJpYXQiOjE2NjE1MjkyMTIsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.MhLptWOwTNTectpJad7L3kQtAMhJXhLguXsg-y2Me54"}}
+
+2022-08-26 10:53:35 - [MESSAGE][WARNING] - JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTUyOTIxMiwiZXhwIjoxNjYxNjE1NjEyLCJpYXQiOjE2NjE1MjkyMTIsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.MhLptWOwTNTectpJad7L3kQtAMhJXhLguXsg-y2Me54"}}
+
+2022-08-26 10:53:35 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 10:53:35 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.val_login(parsedJson): almacena_datos_servicio.Val_mensaje_serv.val_login is PASSED
+
+2022-08-26 10:53:35 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.val_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="2.0" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-26 10:53:35 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-26 10:53:36 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-26 10:53:36 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-26 10:53:36 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-26 10:53:37 - [MESSAGE][INFO] - HAR: C:\Cenet\Cenet-Factura\Mareigua\miFactura_ws_Mareigua-25-08-2022\Reports\20220826_105310\miFactura_Mareigua\ConsultarConsolidadoFactura\20220826_105310\requests\main\1.har
+
+2022-08-26 10:53:37 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-26 10:53:37 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-26 10:53:37 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-26 10:53:37 - [TEST_STEP][PASSED] - println(jsonString): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-08-26 10:53:24 - [TEST_SUITE][PASSED] - ConsultarConsolidadoFactura: Test Cases/ConsultarConsolidado_Factura]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

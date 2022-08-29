@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarConsolidadoFactura,,,,2022-08-26 10:53:24,2022-08-26 10:53:37,"13,000s",PASSED
+,,,,,,,
+Test Cases/Login,,,,2022-08-26 10:53:25,2022-08-26 10:53:35,"9,595s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-26 10:53:28,2022-08-26 10:53:34,"6,550s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-26 10:53:34,2022-08-26 10:53:34,"0,058s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-26 10:53:34,2022-08-26 10:53:34,"0,065s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-26 10:53:34,2022-08-26 10:53:35,"0,169s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-26 10:53:35,2022-08-26 10:53:35,"0,060s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.val_login(parsedJson),,,,2022-08-26 10:53:35,2022-08-26 10:53:35,"0,100s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-26 10:53:35,2022-08-26 10:53:37,"2,000s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-26 10:53:36,2022-08-26 10:53:36,"0,020s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-26 10:53:36,2022-08-26 10:53:36,"0,012s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-26 10:53:36,2022-08-26 10:53:37,"1,278s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-26 10:53:37,2022-08-26 10:53:37,"0,001s",PASSED
+status = response.getStatusCode(),,,,2022-08-26 10:53:37,2022-08-26 10:53:37,"0,019s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-26 10:53:37,2022-08-26 10:53:37,"0,008s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-26 10:53:37,2022-08-26 10:53:37,"0,017s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-26 10:53:37,2022-08-26 10:53:37,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-26 10:53:37,2022-08-26 10:53:37,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-26 10:53:37,2022-08-26 10:53:37,"0,000s",PASSED
+println(jsonString),,,,2022-08-26 10:53:37,2022-08-26 10:53:37,"0,017s",PASSED

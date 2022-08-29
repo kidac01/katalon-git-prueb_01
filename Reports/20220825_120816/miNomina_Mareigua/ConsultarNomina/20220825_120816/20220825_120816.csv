@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarNomina,,,,2022-08-25 12:08:31,2022-08-25 12:08:45,"13,319s",PASSED
+,,,,,,,
+Test Cases/Login,,,,2022-08-25 12:08:33,2022-08-25 12:08:43,"9,938s",PASSED
+"respu = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-25 12:08:35,2022-08-25 12:08:42,"6,729s",PASSED
+response = getInstance().getCurrentResponse(),,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,003s",PASSED
+request = getInstance().getCurrentRequest(),,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,024s",PASSED
+"def_status_200 = verifyResponseStatusCodeInRange(response, 200, 500)",,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,083s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,038s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,041s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,039s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,043s",PASSED
+val = ValidationMessage,,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,082s",PASSED
+if (val == null),,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,135s",PASSED
+if (Content != null),,,,2022-08-25 12:08:42,2022-08-25 12:08:42,"0,036s",PASSED
+"println(""token -->"" + token)",,,,2022-08-25 12:08:42,2022-08-25 12:08:43,"0,143s",PASSED
+,,,,,,,
+Test Cases/ConsultarNomina,,,,2022-08-25 12:08:43,2022-08-25 12:08:45,"1,854s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-25 12:08:43,2022-08-25 12:08:43,"0,017s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-25 12:08:43,2022-08-25 12:08:43,"0,004s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Nomina"", [""tipo_identificacion_id"":tipo_identificacion_id, ""numero_identificacion"":numero_identificacion, ""token"":token]))",,,,2022-08-25 12:08:43,2022-08-25 12:08:45,"1,261s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-25 12:08:45,2022-08-25 12:08:45,"0,004s",PASSED
+status = response.getStatusCode(),,,,2022-08-25 12:08:45,2022-08-25 12:08:45,"0,002s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-25 12:08:45,2022-08-25 12:08:45,"0,004s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-25 12:08:45,2022-08-25 12:08:45,"0,012s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-25 12:08:45,2022-08-25 12:08:45,"0,003s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-25 12:08:45,2022-08-25 12:08:45,"0,005s",PASSED
+println(jsonString),,,,2022-08-25 12:08:45,2022-08-25 12:08:45,"0,002s",PASSED

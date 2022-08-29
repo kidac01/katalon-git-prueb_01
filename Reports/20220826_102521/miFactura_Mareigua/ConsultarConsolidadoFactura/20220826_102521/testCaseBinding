@@ -1,0 +1,2 @@
+{"testCaseName":"Test Cases/Login","testCaseId":"Test Cases/Login","iterationVariableName":""}
+{"testCaseName":"Test Cases/ConsultarConsolidado_Factura","testCaseId":"Test Cases/ConsultarConsolidado_Factura","iterationVariableName":"","bindedValues":{"numero_identificacion":"\u0027100451\u0027","tipo_identificacion_id":"\u002713\u0027","val_mensaje_report":"\u0027Exitosa\u0027","registro":"\u00271\u0027"}}
