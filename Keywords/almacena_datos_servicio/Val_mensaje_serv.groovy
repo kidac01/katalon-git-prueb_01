@@ -11,19 +11,6 @@ import internal.GlobalVariable as Global
 
 public class Val_mensaje_serv {
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	@Keyword
 
 	def val_login(Map parsedJson) {
