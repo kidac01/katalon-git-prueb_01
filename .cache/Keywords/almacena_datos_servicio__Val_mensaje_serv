@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "12553A3BE8738A032B130E5F10A35C90",
+  "keywordFileContentHash": "125FA7BFC5C1205CDDFDDF545FB9F549",
   "keywordClasses": [
     {
       "name": "almacena_datos_servicio.Val_mensaje_serv",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "valida_mensaje_serv_login",
@@ -65,8 +64,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "valida_mensaje_serv_report",
@@ -97,21 +95,18 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "guarda_salida_mensaje_serv_login",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "guarda_salida_consultar_factura",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
