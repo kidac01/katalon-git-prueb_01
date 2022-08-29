@@ -12,6 +12,15 @@ import internal.GlobalVariable as Global
 public class Val_mensaje_serv {
 
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@Keyword
 
 	def val_login(Map parsedJson) {
@@ -35,7 +44,7 @@ public class Val_mensaje_serv {
 
 		Global.resp_type = parsedJson.Type
 		Global.resp_ValidationMessage = parsedJson.ValidationMessage
-		
+
 		Global.resp_Content = parsedJson.Content
 
 		String val_mess = parsedJson.ValidationMessage
@@ -44,7 +53,7 @@ public class Val_mensaje_serv {
 		if(val_mess == null) {
 			Global.resp_ValidationMessage = 'null'
 		}
-		
+
 		if(val_content == null) {
 			Global.resp_Content = 'null'
 		}
