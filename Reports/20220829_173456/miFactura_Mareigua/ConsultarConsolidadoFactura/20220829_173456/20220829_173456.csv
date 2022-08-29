@@ -1,0 +1,197 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarConsolidadoFactura,,,,2022-08-29 17:35:08,2022-08-29 17:35:54,"46,220s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:09,2022-08-29 17:35:23,"13,546s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:10,2022-08-29 17:35:12,"1,311s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:12,2022-08-29 17:35:20,"8,339s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:20,2022-08-29 17:35:20,"0,077s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:20,2022-08-29 17:35:20,"0,030s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:20,2022-08-29 17:35:20,"0,044s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:20,2022-08-29 17:35:20,"0,065s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:20,2022-08-29 17:35:20,"0,086s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:20,2022-08-29 17:35:20,"0,089s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:20,2022-08-29 17:35:20,"0,040s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:20,2022-08-29 17:35:21,"0,184s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:21,2022-08-29 17:35:23,"1,931s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:23,2022-08-29 17:35:25,"2,201s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:23,2022-08-29 17:35:23,"0,009s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:23,2022-08-29 17:35:24,"1,210s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:24,2022-08-29 17:35:24,"0,023s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:24,2022-08-29 17:35:24,"0,006s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:24,2022-08-29 17:35:24,"0,002s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:24,2022-08-29 17:35:24,"0,029s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:24,2022-08-29 17:35:24,"0,030s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:24,2022-08-29 17:35:24,"0,009s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:24,2022-08-29 17:35:24,"0,003s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:24,2022-08-29 17:35:24,"0,010s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:24,2022-08-29 17:35:25,"0,613s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:26,2022-08-29 17:35:28,"2,577s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:26,2022-08-29 17:35:26,"0,012s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:26,2022-08-29 17:35:27,"1,466s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:27,2022-08-29 17:35:27,"0,055s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:27,2022-08-29 17:35:27,"0,031s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:27,2022-08-29 17:35:27,"0,044s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:27,2022-08-29 17:35:27,"0,054s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:27,2022-08-29 17:35:27,"0,071s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:28,2022-08-29 17:35:28,"0,015s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:28,2022-08-29 17:35:28,"0,109s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:28,2022-08-29 17:35:28,"0,091s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:28,2022-08-29 17:35:28,"0,328s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:28,2022-08-29 17:35:31,"2,313s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:28,2022-08-29 17:35:28,"0,008s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:28,2022-08-29 17:35:30,"1,076s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,002s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,010s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,011s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,000s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,079s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:30,2022-08-29 17:35:30,"0,578s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:31,2022-08-29 17:35:33,"2,360s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:31,2022-08-29 17:35:31,"0,010s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:31,2022-08-29 17:35:33,"1,397s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,000s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,045s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,006s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,000s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,002s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,005s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:33,2022-08-29 17:35:33,"0,444s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:34,2022-08-29 17:35:36,"1,949s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:34,2022-08-29 17:35:34,"0,021s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:34,2022-08-29 17:35:35,"1,149s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:35,2022-08-29 17:35:35,"0,028s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:35,2022-08-29 17:35:35,"0,040s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:35,2022-08-29 17:35:35,"0,004s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:35,2022-08-29 17:35:35,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:35,2022-08-29 17:35:35,"0,001s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:35,2022-08-29 17:35:35,"0,000s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:35,2022-08-29 17:35:35,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:35,2022-08-29 17:35:35,"0,009s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:35,2022-08-29 17:35:36,"0,577s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:36,2022-08-29 17:35:38,"1,911s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:36,2022-08-29 17:35:36,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:36,2022-08-29 17:35:37,"1,094s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:37,2022-08-29 17:35:37,"0,000s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:37,2022-08-29 17:35:37,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:37,2022-08-29 17:35:37,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:37,2022-08-29 17:35:37,"0,015s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:37,2022-08-29 17:35:38,"0,006s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:38,2022-08-29 17:35:38,"0,000s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:38,2022-08-29 17:35:38,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:38,2022-08-29 17:35:38,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:38,2022-08-29 17:35:38,"0,729s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:39,2022-08-29 17:35:40,"1,600s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:39,2022-08-29 17:35:39,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:39,2022-08-29 17:35:40,"0,832s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,000s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,008s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,001s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:40,2022-08-29 17:35:40,"0,672s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:41,2022-08-29 17:35:42,"1,492s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:41,2022-08-29 17:35:41,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:41,2022-08-29 17:35:42,"0,956s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,000s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,010s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,002s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,004s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,006s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,010s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,181s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:42,2022-08-29 17:35:44,"1,886s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:42,2022-08-29 17:35:42,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:42,2022-08-29 17:35:44,"1,604s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,000s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,008s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,003s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,002s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,167s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:44,2022-08-29 17:35:46,"2,019s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:44,2022-08-29 17:35:44,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:44,2022-08-29 17:35:46,"1,790s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,000s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,006s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,000s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,005s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,143s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:46,2022-08-29 17:35:48,"1,795s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:46,2022-08-29 17:35:46,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:46,2022-08-29 17:35:48,"1,175s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,000s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,002s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,009s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,005s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,001s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,015s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,565s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:48,2022-08-29 17:35:50,"1,299s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:48,2022-08-29 17:35:48,"0,006s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:48,2022-08-29 17:35:49,"1,028s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:49,2022-08-29 17:35:49,"0,010s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:49,2022-08-29 17:35:49,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:49,2022-08-29 17:35:49,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:49,2022-08-29 17:35:49,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:49,2022-08-29 17:35:49,"0,008s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:49,2022-08-29 17:35:49,"0,001s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:49,2022-08-29 17:35:49,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:49,2022-08-29 17:35:49,"0,008s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:49,2022-08-29 17:35:50,"0,172s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:50,2022-08-29 17:35:52,"2,414s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:50,2022-08-29 17:35:50,"0,016s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:50,2022-08-29 17:35:52,"2,198s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,000s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,010s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,002s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,000s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,001s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,001s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,139s",PASSED
+,,,,,,,
+Test Cases/Login_param,,,,2022-08-29 17:35:52,2022-08-29 17:35:54,"1,762s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-29 17:35:52,2022-08-29 17:35:52,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miNomina_Mareigua-ConsultarNomina/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-29 17:35:52,2022-08-29 17:35:54,"1,310s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,008s",PASSED
+status_login = response.getStatusCode(),,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,002s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,000s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,010s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,001s",PASSED
+"nom_func = ""val_login""",,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_login(parsedJson, type, ValidationMessage)",,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,010s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_mensaje_serv_login(),,,,2022-08-29 17:35:54,2022-08-29 17:35:54,"0,346s",PASSED
