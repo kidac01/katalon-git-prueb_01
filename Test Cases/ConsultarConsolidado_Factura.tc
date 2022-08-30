@@ -68,6 +68,6 @@
       <description></description>
       <id>0c27fe89-ebd1-458a-a923-f6ebd541f73d</id>
       <masked>false</masked>
-      <name>val_mensaje_report</name>
+      <name>val_consulta_id</name>
    </variable>
 </TestCaseEntity>

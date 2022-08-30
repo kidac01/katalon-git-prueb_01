@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>17d40d30-6363-46f9-bd7c-479b3d6e2c6d</dataFileGUID>
-   <dataSourceUrl>../../Automatizcion_test_data_misFacturas/Serv_Mareigua_miFactura.xlsx</dataSourceUrl>
+   <dataSourceUrl>../../../../Cenet/Cenet-Factura/Automatizcion_test_data_misFacturas/Serv_Mareigua_miFactura.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>

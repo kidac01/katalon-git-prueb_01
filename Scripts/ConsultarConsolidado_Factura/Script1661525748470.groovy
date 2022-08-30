@@ -23,9 +23,11 @@ String jsonString = response.getResponseText()
 
 Global.salida_json = jsonString.replaceAll("\n", "")
 
+//println (Global.salida_json)
+
 JsonSlurper slurper = new JsonSlurper()
 
-//grabar.create_Add(Global.regis + ' - '+jsonString, Global.ruta_arch_salida)
+grabar.create_Add(Global.regis + ' - '+jsonString, Global.ruta_arch_salida)
 
 Map parsedJson = slurper.parseText(jsonString)
 
@@ -33,9 +35,9 @@ Global.nom_func = 'val_mens_serv_report'
 
 println(jsonString)
 
-//CustomKeywords.'almacena_datos_servicio.Val_mensaje_serv.valida_mensaje_serv_report'(parsedJson,val_mensaje_report)
+CustomKeywords.'almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report'(parsedJson,val_consulta_id)
 
-//CustomKeywords.'almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura'()
+CustomKeywords.'almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura'()
 
 
 

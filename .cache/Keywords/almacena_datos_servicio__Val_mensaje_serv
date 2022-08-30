@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "125FA7BFC5C1205CDDFDDF545FB9F549",
+  "keywordFileContentHash": "29E7BDB46035CF283873076A46F6874F",
   "keywordClasses": [
     {
       "name": "almacena_datos_servicio.Val_mensaje_serv",
@@ -69,7 +69,7 @@
           "javadoc": ""
         },
         {
-          "name": "valida_mensaje_serv_report",
+          "name": "valida_consulta_id_serv_report",
           "parameters": [
             {
               "name": "parsedJson",
@@ -85,7 +85,7 @@
               }
             },
             {
-              "name": "val_mensaje_report",
+              "name": "val_consulta_id",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

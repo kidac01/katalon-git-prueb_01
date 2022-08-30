@@ -68,24 +68,35 @@ public class Val_mensaje_serv {
 
 	@Keyword
 
-	def valida_mensaje_serv_report(Map parsedJson, String val_mensaje_report) {
+	def valida_consulta_id_serv_report(Map parsedJson, String val_consulta_id) {
 
-		Global.ConsultaId = parsedJson.ConsultaId
+		Global.ConsultaId = parsedJson.Consulta_Id
 		Global.fecha = parsedJson.Fecha
-
-		if (val_mensaje_report == 'null') {
-			val_mensaje_report = null
-		}
-
-		if (parsedJson.Mensaje == val_mensaje_report) {
-
+		def val_per = parsedJson.Periodos
+		def dim_arreglo = parsedJson.Data.size()
+		
+		println (val_per)
+		
+		if (val_per <= 13 || dim_arreglo != val_per ) {
+			
 			KeywordUtil.markPassed ('EXITO')
-			Global.estado_val_mensaje_report = 'EXITO'
+			Global.estado_val_periodo = 'EXITO'	
+			
+		}else {
+			
+			KeywordUtil.markFailed ('FALLIDO')
+			Global.estado_val_periodo = 'FALLIDO -->  Valor Períodos mayor a 13. ó NO corresponde a valor en DATA[]'
+	}
+		
+		
+		/*if (parsedJson.Consulta_Id == Integer.parseInt(val_consulta_id)) {
+			KeywordUtil.markPassed ('EXITO')
+			Global.estado_val_consulta_id_report = 'EXITO'
 		}else {
 
 			KeywordUtil.markFailed ('FALLIDO')
-			Global.estado_val_mensaje_report = 'FALLIDO'
-		}
+			Global.estado_val_consulta_id_report = 'FALLIDO'
+		}*/
 	}
 
 
@@ -127,21 +138,24 @@ public class Val_mensaje_serv {
 		FileInputStream fis = new FileInputStream (Global.ruta_salida)
 		XSSFWorkbook workbook = new XSSFWorkbook (fis)
 
-		XSSFSheet sheet = workbook.getSheet("cons_nomina")
+		XSSFSheet sheet = workbook.getSheet(Global.nom_func)
 
 		sheet.getRow(Global.regis).createCell(4).setCellType(CellType.NUMERIC)
-		//sheet.getRow(Global.regis).createCell(5).setCellType(CellType.STRING)
+		sheet.getRow(Global.regis).createCell(5).setCellType(CellType.STRING)
 		sheet.getRow(Global.regis).createCell(6).setCellType(CellType.NUMERIC)
 		sheet.getRow(Global.regis).createCell(7).setCellType(CellType.STRING)
 		sheet.getRow(Global.regis).createCell(8).setCellType(CellType.STRING)
 		sheet.getRow(Global.regis).createCell(9).setCellType(CellType.STRING)
+		sheet.getRow(Global.regis).createCell(10).setCellType(CellType.STRING)
 
 		sheet.getRow(Global.regis).getCell(4).setCellValue(Global.status)
-		//sheet.getRow(Global.regis).getCell(5).setCellValue(Global.salida_json)
+		sheet.getRow(Global.regis).getCell(5).setCellValue(Global.salida_json)
 		sheet.getRow(Global.regis).getCell(6).setCellValue(Global.val_time)
 		sheet.getRow(Global.regis).getCell(7).setCellValue(Global.ConsultaId)
 		sheet.getRow(Global.regis).getCell(8).setCellValue(Global.fecha)
-		sheet.getRow(Global.regis).getCell(9).setCellValue(Global.estado_val_mensaje_report)
+		sheet.getRow(Global.regis).getCell(9).setCellValue(Global.estado_val_consulta_id_report)
+		sheet.getRow(Global.regis).getCell(10).setCellValue(Global.estado_val_periodo)
+		
 
 		FileOutputStream outFile = new FileOutputStream (Global.ruta_salida)
 		workbook.write(outFile)

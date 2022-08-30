@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>712aea9e-3852-4300-b714-a8f697a7666c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Login_param</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -55,6 +55,99 @@
          <type>DATA_COLUMN</type>
          <value>registro</value>
          <variableId>b3215920-bd8d-4122-a4c8-54cb33b4a297</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5f721c73-9e8b-4d6d-833e-3eeae1d4dcd6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Elimina_archivo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>71852697-89ef-42a3-9fce-6ce2e05c5e03</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c5554d3c-1a30-401b-a19c-30ae28c18b22</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/miFactura_Mareigua/Serv_Mareigua_miFactura</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>66f68d2a-dbb7-4a24-bf9e-bd5a6ca0ae1e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>06d77179-fd18-4515-8d4a-9073fb79a1fa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>55288177-3bad-4c1c-afc5-6e0b18156535</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cea220ee-5043-422e-ad20-53a5eb04372e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c660b44f-0af7-4dad-af9e-431e5379fb5c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ConsultarConsolidado_Factura</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c1f21f15-5a05-4ad0-897a-da1977a467bb</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/miFactura_Mareigua/Serv_Mareigua_miFactura_login</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>95a46cfc-5e02-4115-ab58-5623b0a9d8a8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c1f21f15-5a05-4ad0-897a-da1977a467bb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>registro</value>
+         <variableId>6026d87e-ce9d-47d5-a663-7c47e678b326</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c1f21f15-5a05-4ad0-897a-da1977a467bb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>TipoIdentificacion</value>
+         <variableId>ab4174d3-c9e8-47e7-b4cc-09da7a9167a6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c1f21f15-5a05-4ad0-897a-da1977a467bb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NumeroIdentificacion</value>
+         <variableId>a5907576-5e9c-4a0b-97ce-e56fca76398c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c1f21f15-5a05-4ad0-897a-da1977a467bb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>val_consulta_id</value>
+         <variableId>0c27fe89-ebd1-458a-a923-f6ebd541f73d</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

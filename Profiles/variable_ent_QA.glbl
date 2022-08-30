@@ -72,12 +72,17 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
-      <name>estado_val_mensaje_report</name>
+      <name>estado_val_consulta_id_report</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
       <name>estado_val_mensaje_login</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>estado_val_periodo</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

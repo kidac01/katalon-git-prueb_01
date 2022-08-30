@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ConsultarConsolidadoFactura" time="56.806" tests="24" failures="0" errors="2">
+   <testsuite name="ConsultarConsolidadoFactura" tests="24" failures="0" errors="2" time="56.806" skipped="0" timestamp="2022-08-30 16:19:31" hostname="cenet - DESKTOP-4DPQOK0" id="Test Suites/miFactura_Mareigua/ConsultarConsolidadoFactura">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\cenet\\git\\katalon-git-prueb_01_1\\Reports\\20220830_161915\\miFactura_Mareigua\\ConsultarConsolidadoFactura\\20220830_161915"/>
+         <property name="logFiles" value="C:\\Users\\cenet\\git\\katalon-git-prueb_01_1\\Reports\\20220830_161915\\miFactura_Mareigua\\ConsultarConsolidadoFactura\\20220830_161915\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cenet - DESKTOP-4DPQOK0"/>
+         <property name="hostAddress" value="192.168.1.127"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.3.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Elimina_archivo" time="3.478" classname="Test Cases/Elimina_archivo" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:19:32 - [TEST_CASE][PASSED] - Test Cases/Elimina_archivo: Test Cases/Elimina_archivo
+
+2022-08-30 16:19:33 - [TEST_STEP][PASSED] - elimina = new almacena_datos_servicio.Elimina_archivo(): null
+
+2022-08-30 16:19:33 - [TEST_STEP][PASSED] - elimina.deleteFile(ruta_arch_salida): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login" time="7.564" classname="Test Cases/Login" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:19:35 - [TEST_CASE][PASSED] - Test Cases/Login: Test Cases/Login
+
+2022-08-30 16:19:36 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/Login", ["Login":Login, "password":password])): Send request and verify the response successfully
+
+2022-08-30 16:19:41 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\0.har
+
+2022-08-30 16:19:42 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:19:42 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:19:42 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:19:42 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:19:42 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:19:42 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:19:42 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:19:42 - [TEST_STEP][PASSED] - markWarning("JSON " + jsonString): JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTg5NDM4MCwiZXhwIjoxNjYxOTgwNzgwLCJpYXQiOjE2NjE4OTQzODAsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.Ybt7WpIJf22c78jy2h_R1yqXnXPE9dai8SPfZrqj-Cc"}}
+
+2022-08-30 16:19:43 - [MESSAGE][WARNING] - JSON {"Type":"OK","ValidationMessage":null,"Content":{"JWT":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRhdmVyIiwiZmFtaWx5X25hbWUiOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMSIsIm5iZiI6MTY2MTg5NDM4MCwiZXhwIjoxNjYxOTgwNzgwLCJpYXQiOjE2NjE4OTQzODAsImlzcyI6Ik1pc0ZhY3R1cmFzIn0.Ybt7WpIJf22c78jy2h_R1yqXnXPE9dai8SPfZrqj-Cc"}}
+
+2022-08-30 16:19:43 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:19:43 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.val_login(parsedJson): almacena_datos_servicio.Val_mensaje_serv.val_login is PASSED
+
+2022-08-30 16:19:43 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.val_login is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="4.68" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:19:43 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:19:44 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:19:44 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:19:44 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:19:44 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\1.har
+
+2022-08-30 16:19:44 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:19:45 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:19:45 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:19:45 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:19:45 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:19:48 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.839" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:19:48 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:19:48 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:19:48 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:19:48 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:19:49 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\2.har
+
+2022-08-30 16:19:49 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:19:49 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:19:49 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:19:49 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:19:49 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:19:49 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:19:49 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:19:49 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:19:49 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:19:49 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:19:49 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:19:50 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:19:50 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:19:50 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:19:50 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:19:50 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:19:50 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:19:50 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="2.352" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:19:50 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:19:50 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:19:50 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:19:50 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:19:52 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\3.har
+
+2022-08-30 16:19:52 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:19:52 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:19:52 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:19:52 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:19:52 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:19:52 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="2.944" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:19:53 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:19:53 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:19:53 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:19:53 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:19:53 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\4.har
+
+2022-08-30 16:19:54 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:19:54 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:19:54 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:19:54 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:19:54 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:19:56 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="2.044" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:19:56 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:19:56 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:19:56 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:19:56 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:19:57 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\5.har
+
+2022-08-30 16:19:57 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:19:57 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:19:57 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:19:57 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:19:58 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:19:58 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:19:58 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="2.081" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:19:58 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:19:58 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:19:58 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:19:58 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:19:59 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\6.har
+
+2022-08-30 16:19:59 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:19:59 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:19:59 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:19:59 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:19:59 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:00 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.378" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:00 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:00 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:00 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:00 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:01 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\7.har
+
+2022-08-30 16:20:01 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:01 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:01 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:01 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:01 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:02 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="2.405" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:02 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:02 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:02 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:02 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:03 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\8.har
+
+2022-08-30 16:20:03 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:03 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:03 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:03 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:04 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:04 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:04 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:04 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.591" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:04 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:04 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:04 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:04 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:05 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\9.har
+
+2022-08-30 16:20:05 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:05 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:05 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:05 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:05 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:06 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.993" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:06 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:06 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:06 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:06 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:07 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\10.har
+
+2022-08-30 16:20:07 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:07 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:07 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:07 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:07 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:08 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.324" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:08 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:08 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:08 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:08 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:09 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\11.har
+
+2022-08-30 16:20:09 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:09 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:09 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:09 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:09 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:09 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.49" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:09 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:10 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:10 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:10 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:10 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\12.har
+
+2022-08-30 16:20:10 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:11 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:11 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:11 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:11 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.529" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:11 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:11 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:12 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\13.har
+
+2022-08-30 16:20:12 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:13 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:13 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:13 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:13 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.198" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:13 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:13 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:13 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\14.har
+
+2022-08-30 16:20:14 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:14 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:14 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:14 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:14 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.171" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:14 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:14 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:15 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\15.har
+
+2022-08-30 16:20:15 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:15 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:15 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:15 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:15 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:15 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.709" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:15 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:16 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:16 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:16 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:16 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\16.har
+
+2022-08-30 16:20:16 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:17 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:17 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:17 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:17 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.632" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:17 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:17 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:18 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\17.har
+
+2022-08-30 16:20:18 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:18 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:18 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:18 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:19 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:19 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:19 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:19 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:19 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.358" classname="Test Cases/ConsultarConsolidado_Factura" status="ERROR">
+         <error type="ERROR" message="Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)
+"/>
+         <system-out><![CDATA[2022-08-30 16:20:19 - [TEST_CASE][ERROR] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)
+
+
+2022-08-30 16:20:19 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:19 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:19 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:20 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\18.har
+
+2022-08-30 16:20:20 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:20 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:20 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:20 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:20 - [TEST_STEP][ERROR] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more
+
+
+2022-08-30 16:20:20 - [MESSAGE][ERROR] - Cannot invoke method size() on null object
+
+2022-08-30 16:20:20 - [MESSAGE][ERROR] - Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[2022-08-30 16:20:19 - [TEST_CASE][ERROR] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.633" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:21 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:21 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:21 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:21 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:22 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\19.har
+
+2022-08-30 16:20:22 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:22 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:22 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:22 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:22 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.127" classname="Test Cases/ConsultarConsolidado_Factura" status="ERROR">
+         <error type="ERROR" message="Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)
+"/>
+         <system-out><![CDATA[2022-08-30 16:20:22 - [TEST_CASE][ERROR] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)
+
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:22 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:23 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\20.har
+
+2022-08-30 16:20:23 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:23 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:23 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:24 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:24 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:24 - [TEST_STEP][ERROR] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more
+
+
+2022-08-30 16:20:24 - [MESSAGE][ERROR] - Cannot invoke method size() on null object
+
+2022-08-30 16:20:24 - [MESSAGE][ERROR] - Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[2022-08-30 16:20:22 - [TEST_CASE][ERROR] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="2.479" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:24 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:24 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:25 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\21.har
+
+2022-08-30 16:20:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:25 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:25 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:25 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:26 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ConsultarConsolidado_Factura" time="1.372" classname="Test Cases/ConsultarConsolidado_Factura" status="PASSED">
+         <system-out><![CDATA[2022-08-30 16:20:26 - [TEST_CASE][PASSED] - Test Cases/ConsultarConsolidado_Factura: Test Cases/ConsultarConsolidado_Factura
+
+2022-08-30 16:20:26 - [TEST_STEP][PASSED] - grabar = new almacena_datos_servicio.Graba_archivo(): null
+
+2022-08-30 16:20:26 - [TEST_STEP][PASSED] - regis = Integer.parseInt(registro): null
+
+2022-08-30 16:20:26 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura", ["TipoIdentificacion":TipoIdentificacion, "NumeroIdentificacion":NumeroIdentificacion, "token":token])): Send request and verify the response successfully
+
+2022-08-30 16:20:27 - [MESSAGE][INFO] - HAR: C:\Users\cenet\git\katalon-git-prueb_01_1\Reports\20220830_161915\miFactura_Mareigua\ConsultarConsolidadoFactura\20220830_161915\requests\main\22.har
+
+2022-08-30 16:20:27 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-08-30 16:20:27 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-08-30 16:20:27 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - val_time = response.getElapsedTime(): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - status = response.getStatusCode(): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - salida_json = jsonString.replaceAll("
+", ""): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - grabar.create_Add(regis + " - " + jsonString, ruta_arch_salida): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(jsonString): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - nom_func = "val_mens_serv_report": null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2022-08-30 16:20:27 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id): EXITO
+
+2022-08-30 16:20:27 - [MESSAGE][PASSED] - EXITO
+
+2022-08-30 16:20:28 - [TEST_STEP][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(): almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED
+
+2022-08-30 16:20:28 - [MESSAGE][PASSED] - almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-08-30 16:19:31 - [TEST_SUITE][ERROR] - ConsultarConsolidadoFactura: Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-08-30 16:19:31 - [TEST_SUITE][ERROR] - ConsultarConsolidadoFactura: Test Cases/ConsultarConsolidado_Factura FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method size() on null object
+	at java_util_List$size$0.call(Unknown Source)
+	at almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(Val_mensaje_serv.groovy:76)
+	at almacena_datos_servicio.Val_mensaje_serv.invokeMethod(Val_mensaje_serv.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at ConsultarConsolidado_Factura.run(ConsultarConsolidado_Factura:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1661894355010.run(TempTestSuite1661894355010.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>
