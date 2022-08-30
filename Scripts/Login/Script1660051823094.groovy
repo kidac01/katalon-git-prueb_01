@@ -10,7 +10,7 @@ import groovy.json.JsonSlurper as JsonSlurper
 
 import internal.GlobalVariable as Global
 
-ResponseObject response = WS.sendRequestAndVerify(findTestObject('miNomina_Mareigua-ConsultarNomina/Login', [('Login') :Login,('password') :password]))
+ResponseObject response = WS.sendRequestAndVerify(findTestObject('miFactura_Mareigua-ConsultarFactura/Login', [('Login') :Login,('password') :password]))
 
 String jsonString = response.getResponseText()
 

@@ -23,7 +23,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/miNomina_Mareigua/Serv_Mareigua_miFactura_login</testDataId>
+         <testDataId>Data Files/miFactura_Mareigua/Serv_Mareigua_miFactura_login</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>

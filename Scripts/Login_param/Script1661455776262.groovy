@@ -12,7 +12,7 @@ import internal.GlobalVariable as Global
 
 Global.regis = Integer.parseInt(registro)
 
-ResponseObject response = WS.sendRequestAndVerify(findTestObject('miNomina_Mareigua-ConsultarNomina/Login', [('Login') :Login,('password') :password]))
+ResponseObject response = WS.sendRequestAndVerify(findTestObject('miFactura_Mareigua-ConsultarFactura/Login', [('Login') :Login,('password') :password]))
 
 Global.val_time = response.getElapsedTime()
 

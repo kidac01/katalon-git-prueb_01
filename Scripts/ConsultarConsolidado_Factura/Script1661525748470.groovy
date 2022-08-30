@@ -13,7 +13,7 @@ Graba_archivo grabar = new Graba_archivo()
 
 Global.regis = Integer.parseInt(registro)
 
-ResponseObject response = WS.sendRequestAndVerify(findTestObject('miNomina_Mareigua-ConsultarNomina/ConsultarConsolidado_Factura', [('TipoIdentificacion') :TipoIdentificacion, ('NumeroIdentificacion') :NumeroIdentificacion, ('token') :token]))
+ResponseObject response = WS.sendRequestAndVerify(findTestObject('miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura', [('TipoIdentificacion') :TipoIdentificacion, ('NumeroIdentificacion') :NumeroIdentificacion, ('token') :token]))
 
 Global.val_time = response.getElapsedTime()
 
