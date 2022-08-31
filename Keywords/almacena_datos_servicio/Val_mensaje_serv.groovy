@@ -74,29 +74,27 @@ public class Val_mensaje_serv {
 		Global.fecha = parsedJson.Fecha
 		def val_per = parsedJson.Periodos
 		def dim_arreglo = parsedJson.Data.size()
-		
+
 		println (val_per)
-		
+
 		if (val_per <= 13 || dim_arreglo != val_per ) {
-			
+
 			KeywordUtil.markPassed ('EXITO')
-			Global.estado_val_periodo = 'EXITO'	
-			
-		}else {
-			
-			KeywordUtil.markFailed ('FALLIDO')
-			Global.estado_val_periodo = 'FALLIDO -->  Valor Períodos mayor a 13. ó NO corresponde a valor en DATA[]'
-	}
-		
-		
-		/*if (parsedJson.Consulta_Id == Integer.parseInt(val_consulta_id)) {
-			KeywordUtil.markPassed ('EXITO')
-			Global.estado_val_consulta_id_report = 'EXITO'
+			Global.estado_val_periodo = 'EXITO'
 		}else {
 
 			KeywordUtil.markFailed ('FALLIDO')
-			Global.estado_val_consulta_id_report = 'FALLIDO'
-		}*/
+			Global.estado_val_periodo = 'FALLIDO -->  Valor Períodos mayor a 13. ó NO corresponde a valor en DATA[]'
+		}
+
+
+		/*if (parsedJson.Consulta_Id == Integer.parseInt(val_consulta_id)) {
+		 KeywordUtil.markPassed ('EXITO')
+		 Global.estado_val_consulta_id_report = 'EXITO'
+		 }else {
+		 KeywordUtil.markFailed ('FALLIDO')
+		 Global.estado_val_consulta_id_report = 'FALLIDO'
+		 }*/
 	}
 
 
@@ -155,7 +153,7 @@ public class Val_mensaje_serv {
 		sheet.getRow(Global.regis).getCell(8).setCellValue(Global.fecha)
 		sheet.getRow(Global.regis).getCell(9).setCellValue(Global.estado_val_consulta_id_report)
 		sheet.getRow(Global.regis).getCell(10).setCellValue(Global.estado_val_periodo)
-		
+
 
 		FileOutputStream outFile = new FileOutputStream (Global.ruta_salida)
 		workbook.write(outFile)
