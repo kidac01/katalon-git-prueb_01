@@ -20,7 +20,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "valida_mensaje_serv_login",
@@ -64,7 +65,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "valida_consulta_id_serv_report",
@@ -95,18 +97,21 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "guarda_salida_mensaje_serv_login",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "guarda_salida_consultar_factura",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
