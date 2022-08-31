@@ -1,0 +1,386 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ConsultarConsolidadoFactura,,,,2022-08-30 23:50:59,2022-08-30 23:52:05,"1m - 5,412s",ERROR
+,,,,,,,
+Test Cases/Elimina_archivo,,,,2022-08-30 23:51:01,2022-08-30 23:51:05,"4,643s",PASSED
+elimina = new almacena_datos_servicio.Elimina_archivo(),,,,2022-08-30 23:51:03,2022-08-30 23:51:03,"0,019s",PASSED
+elimina.deleteFile(ruta_arch_salida),,,,2022-08-30 23:51:03,2022-08-30 23:51:05,"2,180s",PASSED
+,,,,,,,
+Test Cases/Login,,,,2022-08-30 23:51:05,2022-08-30 23:51:17,"11,630s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/Login"", [""Login"":Login, ""password"":password]))",,,,2022-08-30 23:51:06,2022-08-30 23:51:17,"10,305s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:17,2022-08-30 23:51:17,"0,104s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:17,2022-08-30 23:51:17,"0,038s",PASSED
+"markWarning(""JSON "" + jsonString)",,,,2022-08-30 23:51:17,2022-08-30 23:51:17,"0,061s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:17,2022-08-30 23:51:17,"0,042s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.val_login(parsedJson),,,,2022-08-30 23:51:17,2022-08-30 23:51:17,"0,148s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:17,2022-08-30 23:51:23,"6,047s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:18,2022-08-30 23:51:18,"0,020s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:18,2022-08-30 23:51:18,"0,008s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:18,2022-08-30 23:51:21,"2,579s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,007s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,013s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,018s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,101s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,010s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,020s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:21,2022-08-30 23:51:21,"0,073s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:21,2022-08-30 23:51:23,"2,303s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:24,2022-08-30 23:51:25,"1,461s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:24,2022-08-30 23:51:24,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:24,2022-08-30 23:51:24,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:24,2022-08-30 23:51:25,"1,055s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,002s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,008s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,012s",PASSED
+println(jsonString),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,285s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:25,2022-08-30 23:51:27,"2,176s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:25,2022-08-30 23:51:25,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:25,2022-08-30 23:51:27,"1,878s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,012s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,008s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,002s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,008s",PASSED
+println(jsonString),,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:27,2022-08-30 23:51:27,"0,200s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:28,2022-08-30 23:51:30,"2,418s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:28,2022-08-30 23:51:28,"0,010s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:28,2022-08-30 23:51:28,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:28,2022-08-30 23:51:29,"1,046s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,010s",PASSED
+println(jsonString),,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,002s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:29,2022-08-30 23:51:29,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:29,2022-08-30 23:51:30,"1,255s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:30,2022-08-30 23:51:32,"2,316s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:30,2022-08-30 23:51:30,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:30,2022-08-30 23:51:30,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:30,2022-08-30 23:51:32,"2,005s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,010s",PASSED
+println(jsonString),,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:32,2022-08-30 23:51:32,"0,211s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:33,2022-08-30 23:51:35,"2,323s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:33,2022-08-30 23:51:33,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:33,2022-08-30 23:51:33,"0,050s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:33,2022-08-30 23:51:34,"1,711s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:34,2022-08-30 23:51:34,"0,003s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:34,2022-08-30 23:51:34,"0,002s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:34,2022-08-30 23:51:34,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:34,2022-08-30 23:51:34,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:34,2022-08-30 23:51:34,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:34,2022-08-30 23:51:34,"0,011s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:34,2022-08-30 23:51:34,"0,001s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:34,2022-08-30 23:51:34,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:34,2022-08-30 23:51:35,"0,110s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:35,2022-08-30 23:51:35,"0,005s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:35,2022-08-30 23:51:35,"0,348s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:35,2022-08-30 23:51:38,"2,669s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:35,2022-08-30 23:51:35,"0,008s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:35,2022-08-30 23:51:35,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:35,2022-08-30 23:51:36,"1,010s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,015s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,007s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,015s",PASSED
+println(jsonString),,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:36,2022-08-30 23:51:36,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:36,2022-08-30 23:51:38,"1,518s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:38,2022-08-30 23:51:39,"1,337s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:38,2022-08-30 23:51:38,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:38,2022-08-30 23:51:38,"0,010s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:38,2022-08-30 23:51:39,"0,953s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,015s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,016s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:39,2022-08-30 23:51:39,"0,212s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:39,2022-08-30 23:51:42,"2,200s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:40,2022-08-30 23:51:40,"0,008s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:40,2022-08-30 23:51:40,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:40,2022-08-30 23:51:41,"1,096s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:41,2022-08-30 23:51:41,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:41,2022-08-30 23:51:41,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:41,2022-08-30 23:51:41,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:41,2022-08-30 23:51:41,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:41,2022-08-30 23:51:41,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:41,2022-08-30 23:51:41,"0,008s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:41,2022-08-30 23:51:42,"0,002s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:42,2022-08-30 23:51:42,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:42,2022-08-30 23:51:42,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:42,2022-08-30 23:51:42,"0,010s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:42,2022-08-30 23:51:42,"0,171s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:42,2022-08-30 23:51:44,"1,819s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:42,2022-08-30 23:51:42,"0,010s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:42,2022-08-30 23:51:42,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:42,2022-08-30 23:51:43,"1,455s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,010s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,009s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,002s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:43,2022-08-30 23:51:43,"0,010s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:43,2022-08-30 23:51:44,"0,272s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:44,2022-08-30 23:51:45,"1,226s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:44,2022-08-30 23:51:44,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:44,2022-08-30 23:51:44,"0,008s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:44,2022-08-30 23:51:45,"0,958s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,009s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,010s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,010s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,162s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:45,2022-08-30 23:51:47,"1,859s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:45,2022-08-30 23:51:45,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:45,2022-08-30 23:51:47,"1,383s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,008s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,002s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,008s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,161s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:47,2022-08-30 23:51:49,"1,881s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:47,2022-08-30 23:51:47,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:47,2022-08-30 23:51:49,"1,448s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,022s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,017s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,004s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,004s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,002s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,283s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:49,2022-08-30 23:51:52,"2,517s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:49,2022-08-30 23:51:49,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:49,2022-08-30 23:51:50,"1,309s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:50,2022-08-30 23:51:50,"0,002s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:50,2022-08-30 23:51:50,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:50,2022-08-30 23:51:50,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:50,2022-08-30 23:51:50,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:50,2022-08-30 23:51:50,"0,010s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:50,2022-08-30 23:51:51,"0,008s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:51,2022-08-30 23:51:51,"0,002s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:51,2022-08-30 23:51:51,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:51,2022-08-30 23:51:51,"0,010s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:51,2022-08-30 23:51:51,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:51,2022-08-30 23:51:52,"1,116s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:52,2022-08-30 23:51:53,"1,303s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:52,2022-08-30 23:51:52,"0,008s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:52,2022-08-30 23:51:52,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:52,2022-08-30 23:51:53,"1,078s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,008s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,002s",PASSED
+println(jsonString),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,134s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:53,2022-08-30 23:51:55,"2,048s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,020s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:53,2022-08-30 23:51:53,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:53,2022-08-30 23:51:55,"1,713s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,016s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:55,2022-08-30 23:51:55,"0,182s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:55,2022-08-30 23:51:57,"1,611s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:56,2022-08-30 23:51:56,"0,002s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:56,2022-08-30 23:51:56,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:56,2022-08-30 23:51:56,"0,939s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:56,2022-08-30 23:51:56,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:56,2022-08-30 23:51:56,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:56,2022-08-30 23:51:56,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:56,2022-08-30 23:51:56,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:56,2022-08-30 23:51:56,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:56,2022-08-30 23:51:57,"0,134s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:57,2022-08-30 23:51:57,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:57,2022-08-30 23:51:57,"0,013s",PASSED
+println(jsonString),,,,2022-08-30 23:51:57,2022-08-30 23:51:57,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:57,2022-08-30 23:51:57,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:51:57,2022-08-30 23:51:57,"0,442s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:57,2022-08-30 23:51:59,"1,625s",ERROR
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:57,2022-08-30 23:51:57,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:57,2022-08-30 23:51:57,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:57,2022-08-30 23:51:59,"1,424s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,007s",PASSED
+println(jsonString),,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,067s",ERROR
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:51:59,2022-08-30 23:52:00,"1,352s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,016s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:51:59,2022-08-30 23:51:59,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:51:59,2022-08-30 23:52:00,"1,158s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:52:00,2022-08-30 23:52:00,"0,125s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,983s",ERROR
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,906s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:52:01,2022-08-30 23:52:01,"0,015s",ERROR
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:52:02,2022-08-30 23:52:03,"1,496s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:52:02,2022-08-30 23:52:02,"0,000s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:52:02,2022-08-30 23:52:02,"0,000s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:52:02,2022-08-30 23:52:03,"1,117s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,000s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,185s",PASSED
+,,,,,,,
+Test Cases/ConsultarConsolidado_Factura,,,,2022-08-30 23:52:03,2022-08-30 23:52:05,"1,344s",PASSED
+grabar = new almacena_datos_servicio.Graba_archivo(),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,003s",PASSED
+regis = Integer.parseInt(registro),,,,2022-08-30 23:52:03,2022-08-30 23:52:03,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""miFactura_Mareigua-ConsultarFactura/ConsultarConsolidado_Factura"", [""TipoIdentificacion"":TipoIdentificacion, ""NumeroIdentificacion"":NumeroIdentificacion, ""token"":token]))",,,,2022-08-30 23:52:03,2022-08-30 23:52:04,"0,995s",PASSED
+val_time = response.getElapsedTime(),,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,000s",PASSED
+status = response.getStatusCode(),,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,000s",PASSED
+jsonString = response.getResponseText(),,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,000s",PASSED
+"salida_json = jsonString.replaceAll(""
+"", """")",,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,000s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,000s",PASSED
+"grabar.create_Add(regis + "" - "" + jsonString, ruta_arch_salida)",,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,007s",PASSED
+parsedJson = slurper.parseText(jsonString),,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,000s",PASSED
+"nom_func = ""val_mens_serv_report""",,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,000s",PASSED
+println(jsonString),,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,000s",PASSED
+"almacena_datos_servicio.Val_mensaje_serv.valida_consulta_id_serv_report(parsedJson, val_consulta_id)",,,,2022-08-30 23:52:04,2022-08-30 23:52:04,"0,002s",PASSED
+almacena_datos_servicio.Val_mensaje_serv.guarda_salida_consultar_factura(),,,,2022-08-30 23:52:04,2022-08-30 23:52:05,"0,264s",PASSED
