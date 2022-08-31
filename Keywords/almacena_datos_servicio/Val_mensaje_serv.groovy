@@ -65,7 +65,6 @@ public class Val_mensaje_serv {
 	}
 
 
-
 	@Keyword
 
 	def valida_consulta_id_serv_report(Map parsedJson, String val_consulta_id) {
